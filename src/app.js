@@ -5,7 +5,7 @@ import viewsRouter from "./routers/view.router.js"
 import { Server } from "socket.io"
 
 const app = express()
-const PORT = 8080
+const PORT = process.env.PORT || 8080
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
