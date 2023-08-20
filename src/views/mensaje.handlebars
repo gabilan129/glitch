@@ -1,0 +1,21 @@
+<div>
+    <h1>Bien venidos a mi chat 43395</h1>
+    <h2>Nombre: <span id="myName"> </span></h2>
+
+    {{!-- inpun del mensaje del usuario --}}
+    <div>
+        <h3>Escribe un mensaje</h3>
+        <input type="text" id="chatBox">
+        <button id="closeChatBox">Close chat</button>
+    </div>
+
+    {{!-- cuadro de renderizado del usuario --}}
+    <div>
+        <p id="mensajeLogs"></p>
+    </div>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/mensaje.js"></script>
